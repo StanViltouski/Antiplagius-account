@@ -1,0 +1,13 @@
+
+# Web Storm files
+.idea/
+
+
+# Dependency directory
+node_modules/
+
+
+# Other files
+package-lock.json
+gulpfile.js
+

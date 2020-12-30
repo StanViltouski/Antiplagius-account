@@ -550,9 +550,9 @@ input[type=text] {
   h3 {
     font-size: 14px; }
   .price-old {
-    font-size: 11px; }
+     /*font-size: 11px;*/ }
   .price-current {
-    font-size: 14px; } }
+     /*font-size: 14px;*/ } }
 
 @media (max-width: 1279px) {
   h1 {
@@ -565,9 +565,9 @@ input[type=text] {
     input[type=text]::placeholder {
       font-size: 12px; }
   .price-old {
-    font-size: 10px; }
+    /*font-size: 10px;*/ }
   .price-current {
-    font-size: 12px; } }
+    /*font-size: 12px;*/ } }
 
 @media (max-width: 1023px) {
   .wrapper {
@@ -596,7 +596,8 @@ input[type=text] {
   background-color: #fff; }
 
 .verif__system__label input:checked ~ .verif__system__block .verif__sistem__name {
-  font-weight: 500; }
+  font-weight: 700; 
+  color:#00B9FF;}
 
 .verif__system__label {
   position: relative;
@@ -668,7 +669,7 @@ input[type=text] {
   .tabs_button:after {
     content: '';
     position: relative;
-    top: 6px;
+    top: 5px;
     align-self: center;
     width: 0;
     height: 0;
@@ -900,9 +901,10 @@ input[type=text] {
   display: inline; }
 
 #top-form  .verif__system_recom .verif_checkbox__block .verif__sistem__text{
-padding: 2px 0 0;}
+padding: 0px 0 0;
+color: #626262;}
 #rewrite-form .verif__system_recom .verif__sistem__text{
-  padding: 5px 0 0;}
+  padding: 2px 0 0;}
 
 .description_service {
   float:left; 
@@ -1001,7 +1003,7 @@ padding: 2px 0 0;}
   width: 695px; }
   .modal_order .tabs_button {
     margin-right: 3px;
-    /*--padding: 8px 17px 0;*/}
+    padding: 8px 17px 0;}
     .modal_order .tabs_button:last-child {
       margin-right: 0; }
     .modal_order .tabs_button span {
@@ -1062,7 +1064,8 @@ padding: 2px 0 0;}
     .modal_order .modal_footer .order_discount {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      margin-top: 5px; }
       .modal_order .modal_footer .order_discount .title {
         font-size: 16px;
         font-weight: 500;
@@ -1078,7 +1081,7 @@ padding: 2px 0 0;}
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 5px;}
+      margin-bottom: 2px;}
       .modal_order .modal_footer .total_price .title {
         font-size: 22px;
         font-weight: 400;
@@ -1233,8 +1236,8 @@ padding: 2px 0 0;}
 @media (max-width: 1329px) {
   /*Cleaning*/
   .tabs_block {
-    margin: 0 auto 23px;
-    width: 652px; }
+    /*margin: 0 auto 23px;
+    width: 652px; */}
   .tabs_button {
     padding: 7px 11px 0 18px;
     margin-right: 2px; }
@@ -1317,7 +1320,8 @@ padding: 2px 0 0;}
     #rewrite-form .verif__system_recom .verif__system__block .label-checkbox {
       margin-right: 5px; }
   #rewrite-form .verif__system_recom .verif__sistem__text .verif__sistem__name {
-    margin-bottom: 7px; }
+    margin-bottom: 7px; 
+   padding-left: 5px;}
   .range_block input {
     width: 573px; }
   /*Check*/

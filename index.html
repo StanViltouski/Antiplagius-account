@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="build/css/styles.css">
 </head>
 <body>
-    <div class="modal_overlay">&nbsp;</div>
+    <div class="overlay">&nbsp;</div>
+    <div class="overlay-menu">&nbsp;</div>
 
     <div class="wrapper">
 
@@ -112,7 +113,7 @@
                 <div class="mainHead_finance">
                     <div class="mainHeadFinance_block balance" onclick="modal_open('#modal_balance')">
                         <div class="title">Баланс</div>
-                        <div class="amount">653₽</div>
+                        <div class="amount">652<span class="rouble">c</span></div>
                     </div>
                     <div class="mainHeadFinance_block discount">
                         <div class="title">Скидка</div>
@@ -219,7 +220,7 @@
                                 </div>
 
                                 <div class="td action">
-                                    <div class="price price-super">Суперцена до 15 октября</div>
+                                    <div class="price price-super" style="background-image: url('assets/account/black-flag-high.svg');">Суперцена до 15 октября</div>
                                     <button class="button button-pay" type="submit"><span>Оплатить</span></button>
                                 </div>
                             </div>
@@ -255,7 +256,7 @@
                                 <div class="td ordering"></div>
 
                                 <div class="td price done">
-                                    <span class="price_paid">Оплачено</span>
+                                    <span class="price_paid"><span>Оплачено</span></span>
                                 </div>
 
                                 <div class="td action">
@@ -292,7 +293,7 @@
                                 </div>
 
                                 <div class="td ordering">
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -335,7 +336,7 @@
                                 </div>
 
                                 <div class="td ordering">
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -390,7 +391,7 @@
                                 </div>
 
                                 <div class="td action">
-                                    <div class="price price-super">Суперцена до 15 октября</div>
+                                    <div class="price price-super" style="background-image: url('assets/account/black-flag-high.svg');">Суперцена до 15 октября</div>
                                     <button class="button button-pay" type="submit"><span>Оплатить</span></button>
                                 </div>
                             </div>
@@ -426,7 +427,7 @@
                                 <div class="td ordering"></div>
 
                                 <div class="td price done">
-                                    <span class="price_paid">Оплачено</span>
+                                    <span class="price_paid"><span>Оплачено</span></span>
                                 </div>
 
                                 <div class="td action">
@@ -463,7 +464,7 @@
                                 </div>
 
                                 <div class="td ordering">
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -620,7 +621,7 @@
                                     <div class="logos">
                                         <img src="assets/account/encr-v1.svg" alt="encr"/>
                                     </div>
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -715,7 +716,7 @@
                                     <div class="logos">
                                         <img src="assets/account/encr-v3.svg" alt="encr"/>
                                     </div>
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -810,7 +811,7 @@
                                     <div class="logos">
                                         <img src="assets/account/encr-v4.svg" alt="encr"/>
                                     </div>
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
 
@@ -950,7 +951,7 @@
                                     <div class="logos">
                                         <img src="assets/account/encr-v4.svg" alt="encr"/>
                                     </div>
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -998,14 +999,6 @@
                 <div class="mainContent_head">
                     <div class="title"><h2>Проверка документов</h2></div>
                     <div class="options">
-                        <div class="options_order">
-                            <button class="button button-multi" disabled onclick="modal_open('#modal_order')"><span>Мультизаказ</span></button>
-                        </div>
-
-                        <div class="options_faq">
-                            <div class="tooltip">Загрузите и выберите несколько файлов, нажмите кнопку “Применить” и вы
-                                сможеет настроить сразу все выбранные документы </div>
-                        </div>
 
                         <form class="options_search" action="/" method="GET">
                             <input type="text" placeholder="Поиск по названию">
@@ -1025,11 +1018,11 @@
                     </div>
                 </div>
 
-                <div class="mainContent_table table_check table">
+                <div class="mainContent_table table">
                     <div class="table_head">
                         <div class="tr">
                             <div class="td">&nbsp;</div>
-                            <div class="td">Дата загрузки</div>
+                            <div class="td"><span>Дата загрузки</span></div>
                             <div class="td">№ Заказа</div>
                             <div class="td">Название документа</div>
                             <div class="td">Оригинальность</div>
@@ -1067,14 +1060,14 @@
                                     </div>
                                 </div>
 
-                                <div class="td originality">
+                                <div class="td originality change">
                                     <div class="logos">
                                         <img src="assets/account/chk-3.svg" alt="logo">
                                         <img src="assets/account/chk-6.svg" alt="logo">
                                         <img src="assets/account/chk-5.svg" alt="logo">
                                         <img src="assets/account/chk-1.svg" alt="logo">
                                     </div>
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -1186,7 +1179,6 @@
                             </div>
                         </div>
 
-
                         <div class="tr">
                             <div class="tr_container">
                                 <div class="td checkbox">
@@ -1214,12 +1206,12 @@
                                     </div>
                                 </div>
 
-                                <div class="td originality">
+                                <div class="td originality change">
                                     <div class="logos">
                                         <img src="assets/account/chk-4.svg" alt="logo">
                                         <img src="assets/account/chk-2.svg" alt="logo">
                                     </div>
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -1372,7 +1364,7 @@
                                     </div>
                                 </div>
 
-                                <div class="td originality">
+                                <div class="td originality change">
                                     <div class="logos">
                                         <img src="assets/account/chk-3.svg" alt="logo">
                                         <img src="assets/account/chk-5.svg" alt="logo">
@@ -1381,7 +1373,7 @@
                                         <img src="assets/account/chk-1.svg" alt="logo">
                                         <img src="assets/account/chk-2.svg" alt="logo">
                                     </div>
-                                    <span class="button button-change"><span>Изменить</span></span>
+                                    <span class="button button-change"><span><span>Изменить</span></span></span>
                                 </div>
 
                                 <div class="td price">
@@ -1500,18 +1492,10 @@
 
 <!-- Table Rewrite -->
 
-            <div id="table_rewrite" class="main_content">
+            <div id="table_rewrite" class="main_content table_rewrite">
                 <div class="mainContent_head">
-                    <div class="title"><h2>Рерайт</h2></div>
+                    <div class="title"><h2>Рерайт документов</h2></div>
                     <div class="options">
-                        <div class="options_order">
-                            <button class="button button-multi" disabled onclick="modal_open('#modal_order')"><span>Мультизаказ</span></button>
-                        </div>
-
-                        <div class="options_faq">
-                            <div class="tooltip">Загрузите и выберите несколько файлов, нажмите кнопку “Применить” и вы
-                                сможеет настроить сразу все выбранные документы </div>
-                        </div>
 
                         <form class="options_search" action="/" method="GET">
                             <input type="text" placeholder="Поиск по названию">
@@ -1535,7 +1519,7 @@
                     <div class="table_head">
                         <div class="tr">
                             <div class="td">&nbsp;</div>
-                            <div class="td">Дата загрузки</div>
+                            <div class="td"><span>Дата загрузки</span></div>
                             <div class="td">№ Заказа</div>
                             <div class="td">Название документа</div>
                             <div class="td">Нужный процент оригинальности</div>
@@ -1574,12 +1558,12 @@
                                 </div>
 
                                 <div class="td originality">
-                                    <span class="percent percent-high">86%</span>
+                                    <span class="percent percent-high">76%</span>
                                 </div>
 
                                 <div class="td price">
-                                    <span class="price-old">22 000₽</span>
-                                    <span class="price-current">12 250₽</span>
+                                    <span class="price-old">300₽</span>
+                                    <span class="price-current">130₽</span>
                                 </div>
 
                                 <div class="td action">
@@ -1617,19 +1601,17 @@
                                 </div>
 
                                 <div class="td originality">
-                                    <span class="percent percent-high">87%</span>
+                                    <span class="percent percent-middle">62%</span>
                                 </div>
 
-                                <div class="td price done">
-                                    <span class="price_paid">Оплачено</span>
+                                <div class="td price">
+                                    <span class="price-old">22 000₽</span>
+                                    <span class="price-current">12 250₽</span>
                                 </div>
 
                                 <div class="td action">
-                                    <div class="timer">
-                                        <div class="timer_data">
-                                            <span class="hours">24</span>:<span class="minutes">15</span>:<span class="seconds">33</span>
-                                        </div>
-                                    </div>
+                                    <div class="price price-super">Суперцена до 15 октября</div>
+                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
                                 </div>
                             </div>
                         </div>
@@ -1661,9 +1643,7 @@
                                     </div>
                                 </div>
 
-                                <div class="td originality">
-                                    <span class="percent percent-high">82%</span>
-                                </div>
+                                <div class="td originality"><span class="percent">&nbsp;</span></div>
 
                                 <div class="td price done">
                                     <span class="price_paid">Оплачено</span>
@@ -1707,18 +1687,18 @@
                                     </div>
                                 </div>
 
-                                <div class="td originality">
-                                    <span class="percent percent-high">78%</span>
-                                </div>
+                                <div class="td originality"><span class="percent">&nbsp;</span></div>
 
-                                <div class="td price">
-                                    <span class="price-old">300₽</span>
-                                    <span class="price-current">130₽</span>
+                                <div class="td price done">
+                                    <span class="price_paid">Оплачено</span>
                                 </div>
 
                                 <div class="td action">
-                                    <div class="price price-super">Суперцена до 15 октября</div>
-                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
+                                    <div class="timer">
+                                        <div class="timer_data">
+                                            <span class="hours">24</span>:<span class="minutes">15</span>:<span class="seconds">33</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1751,7 +1731,7 @@
                                 </div>
 
                                 <div class="td originality">
-                                    <span class="percent percent-high">72%</span>
+                                    <span class="percent percent-high">92%</span>
                                 </div>
 
                                 <div class="td price done">
@@ -1791,9 +1771,7 @@
                                     </div>
                                 </div>
 
-                                <div class="td originality">
-                                    <span class="percent percent-high">93%</span>
-                                </div>
+                                <div class="td originality"><span class="percent">&nbsp;</span></div>
 
                                 <div class="td price done">
                                     <span class="price_paid">Оплачено</span>
@@ -1836,18 +1814,18 @@
                                     </div>
                                 </div>
 
-                                <div class="td originality">
-                                    <span class="percent percent-high">70%</span>
-                                </div>
+                                <div class="td originality"><span class="percent">&nbsp;</span></div>
 
-                                <div class="td price">
-                                    <span class="price-old">22 000₽</span>
-                                    <span class="price-current">12 250₽</span>
+                                <div class="td price done">
+                                    <span class="price_paid">Оплачено</span>
                                 </div>
 
                                 <div class="td action">
-                                    <div class="price price-super">Суперцена до 15 октября</div>
-                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
+                                    <div class="timer">
+                                        <div class="timer_data">
+                                            <span class="hours">24</span>:<span class="minutes">15</span>:<span class="seconds">33</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1880,15 +1858,15 @@
                                 </div>
 
                                 <div class="td originality">
-                                    <span class="percent percent-middle">65%</span>
+                                    <span class="percent percent-high">76%</span>
                                 </div>
 
-                                <div class="td price">
-                                    <span class="price-current">5 000₽</span>
+                                <div class="td price done">
+                                    <span class="price_paid">Оплачено</span>
                                 </div>
 
                                 <div class="td action">
-                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
+                                    <button class="button button-look" type="submit"><span>Смотреть</span></button>
                                 </div>
                             </div>
                         </div>
@@ -1924,18 +1902,10 @@
 
 <!-- Table Cleaning -->
 
-            <div id="table_cleaning" class="main_content">
+            <div id="table_cleaning" class="main_content table_cleaning">
                 <div class="mainContent_head">
                     <div class="title"><h2>Чистка текста</h2></div>
                     <div class="options">
-                        <div class="options_order">
-                            <button class="button button-multi" disabled onclick="modal_open('#modal_order')"><span>Мультизаказ</span></button>
-                        </div>
-
-                        <div class="options_faq">
-                            <div class="tooltip">Загрузите и выберите несколько файлов, нажмите кнопку “Применить” и вы
-                                сможеет настроить сразу все выбранные документы </div>
-                        </div>
 
                         <form class="options_search" action="/" method="GET">
                             <input type="text" placeholder="Поиск по названию">
@@ -1955,15 +1925,15 @@
                     </div>
                 </div>
 
-                <div class="mainContent_table table_cleaning table">
+                <div class="mainContent_table table">
                     <div class="table_head">
                         <div class="tr">
                             <div class="td">&nbsp;</div>
-                            <div class="td">Дата загрузки</div>
+                            <div class="td"><span>Дата загрузки</span></div>
                             <div class="td">№ Заказа</div>
                             <div class="td">Название документа</div>
                             <div class="td">Цена</div>
-                            <div class="td">Действия</div>
+                            <div class="td">Результат</div>
                         </div>
                     </div>
 
@@ -1997,8 +1967,8 @@
                                 </div>
 
                                 <div class="td price">
-                                    <span class="price-old">22 000₽</span>
-                                    <span class="price-current">12 250₽</span>
+                                    <span class="price-old">300₽</span>
+                                    <span class="price-current">130₽</span>
                                 </div>
 
                                 <div class="td action">
@@ -2070,13 +2040,11 @@
                                     </div>
                                 </div>
 
-                                <div class="td price">
-                                    <span class="price-current">1150₽</span>
+                                <div class="td price done">
+                                    <span class="price_paid">Оплачено</span>
                                 </div>
 
-                                <div class="td action">
-                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
-                                </div>
+                                <div class="td action"></div>
                             </div>
                         </div>
 
@@ -2109,10 +2077,12 @@
                                 </div>
 
                                 <div class="td price">
-                                    <span class="price-current">150₽</span>
+                                    <span class="price-old">12 300₽</span>
+                                    <span class="price-current">11 230₽</span>
                                 </div>
 
                                 <div class="td action">
+                                    <div class="price price-super">Суперцена до 15 октября</div>
                                     <button class="button button-pay" type="submit"><span>Оплатить</span></button>
                                 </div>
                             </div>
@@ -2145,14 +2115,11 @@
                                     </div>
                                 </div>
 
-                                <div class="td price">
-                                    <span class="price-old">950₽</span>
-                                    <span class="price-current">150₽</span>
+                                <div class="td price done">
+                                    <span class="price_paid">Оплачено</span>
                                 </div>
 
-                                <div class="td action">
-                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
-                                </div>
+                                <div class="td action"></div>
                             </div>
                         </div>
 
@@ -2218,13 +2185,11 @@
                                     </div>
                                 </div>
 
-                                <div class="td price">
-                                    <span class="price-current">10₽</span>
+                                <div class="td price done">
+                                    <span class="price_paid">Оплачено</span>
                                 </div>
 
-                                <div class="td action">
-                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
-                                </div>
+                                <div class="td action"></div>
                             </div>
                         </div>
 
@@ -2255,14 +2220,11 @@
                                     </div>
                                 </div>
 
-                                <div class="td price">
-                                    <span class="price-old">950₽</span>
-                                    <span class="price-current">5000₽</span>
+                                <div class="td price done">
+                                    <span class="price_paid">Оплачено</span>
                                 </div>
 
-                                <div class="td action">
-                                    <button class="button button-pay" type="submit"><span>Оплатить</span></button>
-                                </div>
+                                <div class="td action"></div>
                             </div>
                         </div>
                     </div>
@@ -2293,9 +2255,64 @@
                 </div>
             </div>
 
+<!-- Settings -->
 
+            <div id="settings" class="main_content settings">
 
-            <div id="settings" class="main_content"></div>
+                <div class="mainContent_head-mobile">
+                    <span>Настройки</span>
+                </div>
+
+                <div class="main_content-container">
+                    <div class="mainContent_head">
+                        <div class="title"><h2>Новый пароль</h2></div>
+                    </div>
+
+                    <div class="mainContent_form">
+                        <form action="POST">
+                            <div class="form_content">
+                                <div class="formContent_block">
+                                    <div class="block_name">
+                                        <span>Ваш текущий пароль</span>
+                                    </div>
+                                    <input type="password"/>
+                                </div>
+
+                                <div class="formContent_block">
+                                    <div class="block_name">
+                                        <span>Новый пароль</span>
+                                    </div>
+                                    <input class="success" type="password"/>
+                                </div>
+
+                                <div class="formContent_block">
+                                    <div class="block_name">
+                                        <span>Повторите новый пароль</span>
+                                    </div>
+
+                                    <input class="error" type="password"/>
+
+                                    <span class="input-error">Пароли не совпадают</span>
+                                </div>
+                            </div>
+
+                            <div class="form_footer">
+                                <div class="formFooter_desc">
+                                    <span>Не менее 8 символов.</span>
+                                    <span>Только латинские буквы, цифры и специальные символы.</span>
+                                    <span>Без пробелов.</span>
+                                </div>
+
+                                <div class="formFooter_button">
+                                    <button class="button"><span>Сохранить</span></button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
 
         </main>
 
@@ -2308,7 +2325,7 @@
     <div id="modal_order" class="modal modal_order">
         <div class="modal_close" onclick="modal_close(this)"></div>
 
-        <div class="modal_title">Мультизаказ <span class="counter">(4 документа)</span></div>
+        <div class="modal_title">Мультизаказ <br class="br_mobile"><span class="counter">(4 документа)</span></div>
 
         <div class="modal_head">
             <div class="tabs_block">
@@ -2617,19 +2634,20 @@
                                 <div class="verif__system_recom-wrapper">
                                     <label class="verif__system__label" for="verif__add_top1">
                                         <input type="checkbox" id="verif__add_top1" name="options_top[]" value="clean_technical" data-limit="0">
-                                        <div class="verif__system__block" >
+                                        <div class="verif__system__block">
                                             <div class="verif_checkbox__block">
                                                 <span class="label-checkbox">&nbsp;</span>
                                                 <div class="verif__sistem__text">
-                                                    <span class="verif__sistem__name" >Сопровождение до защиты</span>
+                                                    <span class="verif__sistem__name">Сопровождение до защиты</span>
                                                 </div>
                                                 <span class="verif__sistem__price">
                                                     <span class="price-old">220<span class="rouble">&#8381;</span></span>
                                                     <span class="price-current">150<span class="rouble">&#8381;</span></span>
                                                 </span>
-
                                             </div>
-                                             <div class="description_service"><span class="verif__sistem__desc" >Вы получаете индивидуальное консультирование по всем вопросам и сопровождение до защиты работы</span></div>
+                                            <div class="description_service height_1">
+                                                <span class="verif__sistem__desc">Вы получаете индивидуальное консультирование по всем вопросам и сопровождение до защиты работы</span>
+                                            </div>
                                         </div>
                                     </label>
 
@@ -2646,7 +2664,10 @@
                                                     <span class="price-current">150<span class="rouble">&#8381;</span></span>
                                                 </span>
                                             </div>
-                                            <div class="description_service"><span class="verif__sistem__desc">Вы получаете доступ к закрытой системе Антиплагиат.ВУЗ</span></div>
+
+                                            <div class="description_service height_2">
+                                                <span class="verif__sistem__desc">Вы получаете доступ к закрытой системе Антиплагиат.ВУЗ</span>
+                                            </div>
                                         </div>
                                     </label>
 
@@ -2656,14 +2677,17 @@
                                             <div class="verif_checkbox__block">
                                                 <span class="label-checkbox">&nbsp;</span>
                                                 <div class="verif__sistem__text">
-                                                    <span class="verif__sistem__name">Улучшенная маскировка</span>                                         
+                                                    <span class="verif__sistem__name">Улучшенная маскировка</span>
                                                 </div>
                                                 <span class="verif__sistem__price">
                                                     <span class="price-old">220<span class="rouble">&#8381;</span></span>
                                                     <span class="price-current">150<span class="rouble">&#8381;</span></span>
                                                 </span>
                                             </div>
-                                            <div class="description_service"><span class="verif__sistem__desc">Мы рекомендуем включить эту опцию. Доп. маскировка вызывает меньше подозрений у проверяющего Вашу работу проподавателя.</span></div>
+
+                                            <div class="description_service height_1">
+                                                <span class="verif__sistem__desc">Мы рекомендуем включить эту опцию. Доп. маскировка вызывает меньше подозрений у проверяющего Вашу работу проподавателя.</span>
+                                            </div>
                                         </div>
                                     </label>
 
@@ -2680,9 +2704,76 @@
                                                     <span class="price-current">150<span class="rouble">&#8381;</span></span>
                                                 </span>
                                             </div>
-                                            <div class="description_service"><span class="verif__sistem__desc">Повышение уникальности индивидуальным алгоритмом</span></div>
+
+                                            <div class="description_service height_2">
+                                                <span class="verif__sistem__desc">Повышение уникальности индивидуальным алгоритмом</span>
+                                            </div>
                                         </div>
                                     </label>
+                                </div>
+                            </div>
+                            <div class="verif__system">
+                                <div class="verif__block__legend">
+                                    Дополнительные услуги
+                                </div>
+
+                                <div class="veriflabels_wrapper">
+                                    <label class="verif__system__label" for="verif__add_cleaning1">
+                                        <input type="checkbox" id="verif__add_cleaning1" name="options_cleaning[]" value="check_technical" data-limit="0" checked>
+                                        <div class="verif__system__block">
+                                            <div class="verif_checkbox__block">
+                                                <span class="label-checkbox">&nbsp;</span>
+                                                <span class="verif__sistem__name check_cleaning_1">Проверить на техническое кодирование</span>
+                                            </div>
+                                            <span class="verif__sistem__price">
+                                                <span class="price-old">220<span class="rouble">&#8381;</span></span>
+                                                <span class="price-current">150<span class="rouble">&#8381;</span></span>
+                                            </span>
+                                        </div>
+                                    </label>
+
+                                    <label class="verif__system__label" for="verif__add_cleaning2">
+                                        <input type="checkbox" id="verif__add_cleaning2" name="options_cleaning[]" value="check_hidden" data-limit="0">
+                                        <div class="verif__system__block">
+                                            <div class="verif_checkbox__block">
+                                                <span class="label-checkbox">&nbsp;</span>
+                                                <span class="verif__sistem__name check_cleaning_2">Проверить на скрытый текст</span>
+                                            </div>
+                                            <span class="verif__sistem__price">
+                                                <span class="price-old">220<span class="rouble">&#8381;</span></span>
+                                                <span class="price-current">150<span class="rouble">&#8381;</span></span>
+                                            </span>
+                                        </div>
+                                    </label>
+
+                                    <label class="verif__system__label" for="verif__add_cleaning3">
+                                        <input type="checkbox" id="verif__add_cleaning3" name="options_cleaning[]" value="clean_technical" data-limit="0">
+                                        <div class="verif__system__block">
+                                            <div class="verif_checkbox__block">
+                                                <span class="label-checkbox">&nbsp;</span>
+                                                <span class="verif__sistem__name check_cleaning_3">Почистить от технического кодирования</span>
+                                            </div>
+                                            <span class="verif__sistem__price">
+                                                <span class="price-old">220<span class="rouble">&#8381;</span></span>
+                                                <span class="price-current">150<span class="rouble">&#8381;</span></span>
+                                            </span>
+                                        </div>
+                                    </label>
+
+                                    <label class="verif__system__label" for="verif__add_cleaning4">
+                                        <input type="checkbox" id="verif__add_cleaning4" name="options_cleaning[]" value="clean_hidden" data-limit="0">
+                                        <div class="verif__system__block">
+                                            <div class="verif_checkbox__block">
+                                                <span class="label-checkbox">&nbsp;</span>
+                                                <span class="verif__sistem__name check_cleaning_4">Почистить от скрытого текста</span>
+                                            </div>
+                                            <span class="verif__sistem__price">
+                                                <span class="price-old">220<span class="rouble">&#8381;</span></span>
+                                                <span class="price-current">150<span class="rouble">&#8381;</span></span>
+                                            </span>
+                                        </div>
+                                    </label>
+
                                 </div>
                             </div>
                         </div>
@@ -2723,14 +2814,16 @@
                                                 <span class="label-checkbox">&nbsp;</span>
                                                 <div class="verif__sistem__text">
                                                     <span class="verif__sistem__name">Сопровождение до защиты</span>
-                                                   
                                                 </div>
                                                 <span class="verif__sistem__price">
                                                     <span class="price-old">220<span class="rouble">&#8381;</span></span>
                                                     <span class="price-current">150<span class="rouble">&#8381;</span></span>
                                                 </span>
                                             </div>
-                                             <div class="description_service"><span class="verif__sistem__desc">Вы получаете индивидуальное консультирование по всем вопросам и сопровождение до защиты работы</span></div>
+
+                                            <div class="description_service">
+                                                <span class="verif__sistem__desc">Вы получаете индивидуальное консультирование по всем вопросам и сопровождение до защиты работы</span>
+                                            </div>
                                         </div>
                                     </label>
 
@@ -2741,14 +2834,16 @@
                                                 <span class="label-checkbox">&nbsp;</span>
                                                 <div class="verif__sistem__text">
                                                     <span class="verif__sistem__name">Улучшенный рерайт</span>
-                                                    
                                                 </div>
                                                 <span class="verif__sistem__price">
                                                     <span class="price-old">220<span class="rouble">&#8381;</span></span>
                                                     <span class="price-current">150<span class="rouble">&#8381;</span></span>
                                                 </span>
                                             </div>
-                                            <div class="description_service"><span class="verif__sistem__desc">Вы получаете индивидуальное консультирование по всем вопросам и сопровождение до защиты работы</span></div>
+
+                                            <div class="description_service">
+                                                <span class="verif__sistem__desc">Вы получаете индивидуальное консультирование по всем вопросам и сопровождение до защиты работы</span>
+                                            </div>
                                         </div>
                                     </label>
                                 </div>
